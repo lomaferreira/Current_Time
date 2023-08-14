@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Roboto+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Borel", cursive;
+  font-family: "Roboto Mono", monospace;
+}
+.container {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(./assets/bg-space.jpg) no-repeat top center/cover;
+}
+ul {
+  backdrop-filter: blur(3px); /*leve embaçado*/
+  -webkit-backdrop-filter: blur(3px);
+  border: 6px solid black;
+  border-radius: 50px;
+  box-shadow: inset 5px 5px 37px 5px #696969;
+  height: 70vh;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding-right: 100px;
+  gap: 20px;
+}
+ul .time {
+  display: flex;
+  flex-direction: row;
+  font-size: 6rem;
+}
+ul .timezone {
+  color: #808080;
+}
