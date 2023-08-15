@@ -7,8 +7,10 @@
   font-family: "Borel", cursive;
   font-family: "Roboto Mono", monospace;
 }
+body {
+  font-size: 16px;
+}
 .container {
-  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,8 +37,18 @@ ul {
 ul .time {
   display: flex;
   flex-direction: row;
-  font-size: 6rem;
+  font-size: 5em;
 }
 ul .timezone {
   color: #808080;
+}
+@media (max-width: 840px) {
+  ul {
+    align-items: center;
+    padding-right: 0;
+    width: 70%;
+  }
+  ul .time {
+    font-size: 3em;
+  }
 }
